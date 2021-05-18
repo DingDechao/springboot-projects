@@ -15,9 +15,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 1. @Configuration - 该类使用spring基于java的配置
 2. @ComponentScan - 启用组建扫描
 3. @EnableAutoConfiguration - 开启spring boot的自动配置
-
-
-
 */
 
 @SpringBootApplication
