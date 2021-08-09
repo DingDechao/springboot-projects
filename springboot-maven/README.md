@@ -16,7 +16,13 @@
 http://localhost:8080/helloworld
 ```
 
+
+### Test Async call
+```
+http://localhost:8080/asyncMethodTest
+```
+
 ### Swagger2 UI
 ```
-http://localhost:8080/swagger-ui.html
+http://localhost:8080/swagger-ui/index.html
 ```

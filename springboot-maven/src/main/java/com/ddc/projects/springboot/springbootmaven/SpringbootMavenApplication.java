@@ -2,6 +2,7 @@ package com.ddc.projects.springboot.springbootmaven;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 /*
 1. 启动引导类
@@ -18,6 +19,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 */
 
 @SpringBootApplication
+//启用异步方法
+@EnableAsync
 public class SpringbootMavenApplication {
 
 	public static void main(String[] args) {
