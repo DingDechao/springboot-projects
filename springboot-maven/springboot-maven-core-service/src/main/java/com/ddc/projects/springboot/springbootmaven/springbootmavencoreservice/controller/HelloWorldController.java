@@ -1,5 +1,6 @@
 package com.ddc.projects.springboot.springbootmaven.springbootmavencoreservice.controller;
 
+import com.ddc.projects.springboot.springbootmaven.springbootmavencoreservice.constants.RestControllerConstants;
 import com.ddc.projects.springboot.springbootmaven.springbootmavencoreservice.properties.DdcProperties;
 import com.ddc.projects.springboot.springbootmaven.springbootmavencoreservice.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,25 +16,24 @@ public class HelloWorldController {
     @Autowired
     private DdcProperties ddcProperties;
 
-    @GetMapping("/helloworld")
+    @GetMapping(RestControllerConstants.HelloWorld.HELLOWORLD)
     public String helloRest() {
         return "hello world";
     }
 
-    @GetMapping("/ddcname")
+    @GetMapping(RestControllerConstants.HelloWorld.DDCNAME)
     public String ddcName() {
         return ddcProperties.getName();
     }
     
-    @PostMapping(value="addperson")
+    @PostMapping(value = RestControllerConstants.HelloWorld.ADDPERSON)
     public Person addPerson(@RequestBody Person person){
         return person;
     }
 
 
-    @PostMapping(value="addpersons")
+    @PostMapping(value = RestControllerConstants.HelloWorld.ADDPERSONS)
     public Person[] addPersons(@RequestBody Person[] persons){
         return persons;
     }
-    
 }
