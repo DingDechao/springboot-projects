@@ -1,5 +1,6 @@
 package com.ddc.projects.springboot.springbootmaven.springbootmavencoreservice;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableAsync;
@@ -21,6 +22,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @SpringBootApplication
 //启用异步方法
 @EnableAsync
+@MapperScan("com.ddc.projects.springboot.springbootmaven.springbootmavencoreservice.mapper")
 public class SpringbootMavenCoreServiceApplication {
 
 	public static void main(String[] args) {

@@ -5,6 +5,7 @@ public interface RestControllerConstants {
     class HelloWorld {
         public static final String HELLOWORLD = "/helloworld";
         public static final String DDCNAME = "/ddcname";
+        public static final String GETPERSON = "/getPerson";
         public static final String ADDPERSON = "/addperson";
         public static final String ADDPERSONS = "/addpersons";
     }
